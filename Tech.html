@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span.required{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <fieldset style="border-radius: 5px; border-color: black; background-color: #f8f836b5;">
+
+    <h1 style="color: #fc0303; font-weight: bold; text-align: center; font-size: 250%;">Tech Fusion 2024</h1>
+    <form action="#">
+        <h3 style="text-align: center; color: rgb(0, 0, 0); font-size: x-large;">Application Form</h3>
+        <fieldset style="border-radius: 5px; background-color: rgb(255, 255, 255);" >
+            
+        <div>
+            <label for="first">First name <span class="required">*</span>:</label>
+            <br>
+            <input type="text" id="first" required>
+            <br>
+            <br>
+        </div>
+        <div>
+            <label for="Last">Last name <span class="required">*</span>:</label>
+            <br>
+            <input type="text" id="Last" required>
+            <br>
+            <br>
+        </div>
+        <div>
+            <label for="email">Enter your email <span class="required">*</span>:</label>
+            <br>
+             <input type="email" id="email" required>
+             <br>
+            <br>
+        </div>
+        <div>
+            <label for="phoneNumber">Add your phone number <span class="required">*</span> :</label>
+            <br>
+            <input type="tel" id="phoneNumber" placeholder="Enter your phone number" pattern="[0-9]+" required>
+            <br>
+            <br>
+        </div>
+        <div>
+            <label for="password">Create Password <span class="required">*</span> :</label>
+            <br>
+            <input type="password" name="password" required>
+            <br>
+            <br>
+        </div>
+        </fieldset>
+        <br>
+    
+    <fieldset style="border-radius: 5px; background-color: white;">
+        <legend style="font-weight: bold; background-color: white;">Choose your Profile type :</legend>
+        <label for="Student">Student</label>
+        <input type="radio" id="Student" name="one" required>
+
+        <label for="pro">Professional</label>
+        <input type="radio" id="pro" name="one" required>
+
+        <label for="enth">Enthusiast</label>
+        <input type="radio" id="enth" name="one" required>
+    </fieldset required>
+    <br>
+
+    <fieldset style="background-color: white; border-radius: 5px;">
+    <label for="domainSelect" style="font-weight: bold;">Select Your Primary Domain of Interest <span class="required">*</span> :</label>
+    <select id="domainSelect" name="domain" >
+        <option value="web-development">Web Development</option>
+        <option value="data-science">Data Science</option>
+        <option value="cloud-computing">Cloud Computing</option>
+        <option value="artificial-intelligence">Artificial Intelligence</option>
+        <option value="cybersecurity">Cybersecurity</option>
+    </select>
+    </fieldset>
+    <br>
+    
+        <fieldset style="border-radius: 5px; background-color: white;">
+            <legend style="font-size: large; font-weight: bold; background-color: white;">Please select workshops you wants to choose :</legend>
+            <div>
+                <input type="checkbox" id="quantum" name="quantum" class="required">
+                <label for="quantum">Intro to Quantum Computing</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="VR" name="VR" class="required">
+                <label for="VR">Virtual  Reality on the Web</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="cyber" name="cyber" class="required">
+                <label for="cyber">Cybersecurity 101</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="medical" name="medical" class="required">
+                <label for="medical">AI in Medical Imaging</label>
+            </div>
+
+        </fieldset>
+        <br>
+        <label for="info" style="font-weight: bold;">Any Additional information : </label>
+        <br>
+        <textarea style="border-radius: 5px;" name="info" id="info" cols="100" rows="5" maxlength="300" ></textarea>
+    
+
+    <fieldset style="border-radius: 5px; background-color: white;">
+        <legend style="font-weight: bold;">Preferred Days :</legend>
+        <label for="Days">Day 1</label>
+        <input type="checkbox" id="Days" >
+
+        <label for="Days">Day 2</label>
+        <input type="checkbox" id="Days" >
+
+        <label for="Days">Day 3</label>
+        <input type="checkbox" id="Days" >
+    </fieldset>
+    <br>
+
+    <fieldset style="border-radius: 5px; background-color: white;">
+        <legend style="font-weight: bolder; background-color: white;">Meal Preference :</legend>
+        <label for="veg">Vegetarian</label>
+        <input type="radio" id="veg" name="meal" required>
+
+        <label for="non-veg">Non-Vegetarian</label>
+        <input type="radio" id="non-veg" name="meal" required>
+
+        <label for="vegan">Vegan</label>
+        <input type="radio" id="vegan" name="meal" required>
+
+        <label for="none">No Preference</label>
+        <input type="radio" id="none" name="meal" required>
+    </fieldset>
+    <br>
+    <fieldset style="border-radius: 5px; background-color: white;">
+    <label for="" style="font-weight: bold;">Terms and Conditions : </label>
+    <p>i agree to all terms and Conditions <span><input type="checkbox" class="required" required></span></p>
+    
+    <input type="submit">
+    </fieldset>
+
+    </form>
+</fieldset>
+</body>
+</html>
