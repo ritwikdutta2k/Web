@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #box1, #box2{
+        width: 300px;
+        height: 150px;
+        border: solid rgb(39, 78, 39);
+        
+    }
+
+    #box3{
+        width: 300px;
+        height: 305px;
+        border: solid rgb(103, 126, 87);
+        background-color: rgb(103, 126, 87);
+    }
+
+    #cir{
+        width: 95px;
+        height: 95px;
+        border: solid rgb(203, 250, 108);
+        border-radius: 50%;
+        margin-left: -50px;
+        margin-top: -230px;
+        background-color: rgb(203, 250, 108);
+    }
+
+    #parent{
+        display: flex;
+    }
+
+    #box1{
+        border: solid rgb(86, 194, 86);
+        background-color: rgb(86, 194, 86);
+    }
+
+    #box2{
+        border-left-color: rgb(124, 124, 255);
+        border-right-color: green;
+        background:linear-gradient(to right, rgb(124, 124, 255), green);
+    }
+
+    #box4{
+        width: 130px;
+        height: 130px;
+        border: solid ;
+        background-image: url("https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg");
+        background-size: cover;
+        margin-left: 85px;
+        margin-top: 120px;
+    }
+</style>
+<body>
+
+    <div id="parent">
+    
+    <div>
+      
+      <div id="box1">
+        
+      </div>
+      <div id="box2"></div>
+      </div>
+      
+    <div id="box3">
+        <div id="box4"></div>
+        <div id="cir"></div>
+    </div>
+      
+    </div>
+</body>
+</html>
